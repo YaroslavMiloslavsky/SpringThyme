@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Future 1M$ Idea</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="mt-5">Welcome to My Spring Boot Application!</h1>
+		<p class="lead">This is a simple example integrating Bootstrap.</p>
+
+	</div>
+
+	<ol class="list-group list-group-horizontal">
+		<li th:each="greeting: ${greetings}" class="list-group-item" th:text="${greeting}"></li>
+	</ol>
+</body>
+
+</html>
